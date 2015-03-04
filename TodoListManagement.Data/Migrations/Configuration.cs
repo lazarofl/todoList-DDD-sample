@@ -5,14 +5,14 @@ namespace TodoListManagement.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TodoListManagement.Data.TodosManagementContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<TodoListManagement.Data.TodoListManagementContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(TodoListManagement.Data.TodosManagementContext context)
+        protected override void Seed(TodoListManagement.Data.TodoListManagementContext context)
         {
             //  This method will be called after migrating to the latest version.
 

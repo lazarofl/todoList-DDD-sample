@@ -5,16 +5,16 @@ using TodosManagement.Core.Model.TodosAggregate;
 
 namespace TodoListManagement.Data
 {
-    public class TodosManagementContext : DbContext
+    public class TodoListManagementContext : DbContext
     {
-        public TodosManagementContext()
+        public TodoListManagementContext()
             : base("TodoDB")
         {
             this.Configuration.ValidateOnSaveEnabled = false;
             this.Configuration.LazyLoadingEnabled = true;
         }
 
-        static TodosManagementContext()
+        static TodoListManagementContext()
         {
             DbConfiguration.SetConfiguration(new MySql.Data.Entity.MySqlEFConfiguration());
         }

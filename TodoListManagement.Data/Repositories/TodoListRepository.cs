@@ -11,9 +11,9 @@ namespace TodoListManagement.Data.Repositories
 {
     public class TodoListRepository : ITodoListRepository, IDisposable
     {
-        private readonly TodosManagementContext _context;
+        private readonly TodoListManagementContext _context;
 
-        public TodoListRepository(TodosManagementContext context)
+        public TodoListRepository(TodoListManagementContext context)
         {
             _context = context;
         }

@@ -9,7 +9,7 @@ namespace TodosManagement.ModuleSegregationResolver
     {
         public override void Load()
         {
-            var context = new TodosManagementContext();
+            var context = new TodoListManagementContext();
 
             Bind<ITodoListRepository>().To<TodoListRepository>()
                 .WithConstructorArgument("context", context);
