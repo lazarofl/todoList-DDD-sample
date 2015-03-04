@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using TodosManagement.ApplicationService.Interfaces;
 using TodosManagement.Core.Interfaces;
 using TodosManagement.Core.Model.TodosAggregate;
@@ -30,32 +30,40 @@ namespace TodosManagement.ApplicationService.ConcreteServices
         {
             TodoList todolist = TodoList.Create(titulo, resposavel);
 
+            if (!todolist.IsValid)
+                throw new ApplicationException("To-do List não é válida");
+
             _repository.Insert(todolist);
 
             return todolist;
         }
 
-        public TodoList Find(System.Guid id)
+        public TodoList Find(Guid id)
         {
             return _repository.Find(id);
         }
 
 
-        public TodoItem AdicionarTarefa(System.Guid id, string titulo, string responsavel)
+        public TodoItem AdicionarTarefa(Guid id, string titulo, string responsavel)
         {
             var todolist = _repository.Find(id);
             var tarefa = todolist.AdicionarTarefa(titulo, responsavel);
+      
+            if (!todolist.IsValid)
+                throw new ApplicationException("Tarefa não é válida");
+
+            _repository.Update(todolist);
             return tarefa;
         }
 
-        public void ConcluirTodoList(System.Guid id)
+        public void ConcluirTodoList(Guid id)
         {
             var todolist = _repository.Find(id);
             todolist.Concluir(usuario: @"Administrador");
             _repository.Update(todolist);
         }
 
-        public void ReabrirTodoList(System.Guid id)
+        public void ReabrirTodoList(Guid id)
         {
             var todolist = _repository.Find(id);
             todolist.Reabrir(usuario: @"Administrador");

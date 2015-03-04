@@ -1,4 +1,4 @@
-﻿namespace Models
+﻿namespace TodosManagement.Core.Model.Enums.ModelsStates
 {
     public enum TodoItemStatus
     {

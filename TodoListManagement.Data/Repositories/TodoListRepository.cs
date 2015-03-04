@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using Models;
 using TodosManagement.Core.Interfaces;
+using TodosManagement.Core.Model.Enums.ModelsStates;
 using TodosManagement.Core.Model.TodosAggregate;
 
 namespace TodoListManagement.Data.Repositories

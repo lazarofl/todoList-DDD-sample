@@ -1,4 +1,4 @@
-﻿namespace Models
+﻿namespace TodosManagement.Core.Model.Enums.Rules
 {
     public enum TodoItemBrokenRules
     {

@@ -2,6 +2,8 @@
 using Models;
 using SharedKernel.Models;
 using TodosManagement.Core.Model.DomainEvents;
+using TodosManagement.Core.Model.Enums.ModelsStates;
+using TodosManagement.Core.Model.Enums.Rules;
 
 namespace TodosManagement.Core.Model.TodosAggregate
 {

@@ -6,6 +6,7 @@ using SharedKernel.DomainEventsDispatcher;
 using SharedKernel.DomainEventsDispatcher.Interfaces;
 using SharedKernel.DomainEventsDispatcher.ServiceLocators;
 using TodosManagement.Core.Model.DomainEvents;
+using TodosManagement.Core.Model.Enums.ModelsStates;
 using TodosManagement.Core.Model.TodosAggregate;
 using Xunit;
 

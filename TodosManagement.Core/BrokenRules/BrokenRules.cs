@@ -1,4 +1,4 @@
-﻿namespace Models.Core
+﻿namespace TodosManagement.Core.BrokenRules
 {
     public class BrokenRoles<T>
     {

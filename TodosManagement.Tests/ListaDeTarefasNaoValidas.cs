@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using TodosManagement.Core.Model.Enums.Rules;
 using TodosManagement.Core.Model.TodosAggregate;
 using Xunit;
 
