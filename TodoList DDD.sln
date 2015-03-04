@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedKernel", "SharedKernel\SharedKernel.csproj", "{E96140CC-4556-4752-9BAD-C9B21530ACAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TodosManagement", "TodosManagement", "{6CE41392-954C-4882-A2E9-CAD51E3196D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosManagement.Core", "TodosManagement.Core\TodosManagement.Core.csproj", "{9B79B842-188D-42D9-B156-FA50C4957846}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosManagement.Tests", "TodosManagement.Tests\TodosManagement.Tests.csproj", "{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{080CA883-E12E-4901-86BB-274E4012A78E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Web", "TodoList.Web\TodoList.Web.csproj", "{39F1FF92-2DFA-4189-915E-0061C2A2C726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListManagement.Data", "TodoListManagement.Data\TodoListManagement.Data.csproj", "{A8FA901F-1E06-418A-8FDF-75B9DEE5A223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoListManagement.Services", "TodoListManagement.Services\TodoListManagement.Services.csproj", "{5B642A57-A34D-43EC-9958-DDEBD57EB3FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{49A71FEF-0DD5-411F-9CA1-64899A70C6C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosManagement.ApplicationService", "TodosManagement.ApplicationService\TodosManagement.ApplicationService.csproj", "{512E16ED-6586-43B0-80A4-4ECC04E0D864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodosManagement.ModuleSegregationResolver", "TodosManagement.ModuleSegregationResolver\TodosManagement.ModuleSegregationResolver.csproj", "{9C76D05D-1CF3-4411-8812-C021E7501EDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E96140CC-4556-4752-9BAD-C9B21530ACAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96140CC-4556-4752-9BAD-C9B21530ACAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96140CC-4556-4752-9BAD-C9B21530ACAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96140CC-4556-4752-9BAD-C9B21530ACAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B79B842-188D-42D9-B156-FA50C4957846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B79B842-188D-42D9-B156-FA50C4957846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B79B842-188D-42D9-B156-FA50C4957846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B79B842-188D-42D9-B156-FA50C4957846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39F1FF92-2DFA-4189-915E-0061C2A2C726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39F1FF92-2DFA-4189-915E-0061C2A2C726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39F1FF92-2DFA-4189-915E-0061C2A2C726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39F1FF92-2DFA-4189-915E-0061C2A2C726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8FA901F-1E06-418A-8FDF-75B9DEE5A223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8FA901F-1E06-418A-8FDF-75B9DEE5A223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8FA901F-1E06-418A-8FDF-75B9DEE5A223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8FA901F-1E06-418A-8FDF-75B9DEE5A223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B642A57-A34D-43EC-9958-DDEBD57EB3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B642A57-A34D-43EC-9958-DDEBD57EB3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B642A57-A34D-43EC-9958-DDEBD57EB3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B642A57-A34D-43EC-9958-DDEBD57EB3FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512E16ED-6586-43B0-80A4-4ECC04E0D864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512E16ED-6586-43B0-80A4-4ECC04E0D864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512E16ED-6586-43B0-80A4-4ECC04E0D864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512E16ED-6586-43B0-80A4-4ECC04E0D864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C76D05D-1CF3-4411-8812-C021E7501EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C76D05D-1CF3-4411-8812-C021E7501EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C76D05D-1CF3-4411-8812-C021E7501EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C76D05D-1CF3-4411-8812-C021E7501EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B79B842-188D-42D9-B156-FA50C4957846} = {6CE41392-954C-4882-A2E9-CAD51E3196D4}
+		{29D070A8-5A1C-402F-ACE4-41FEA0D2E5D4} = {6CE41392-954C-4882-A2E9-CAD51E3196D4}
+		{080CA883-E12E-4901-86BB-274E4012A78E} = {6CE41392-954C-4882-A2E9-CAD51E3196D4}
+		{A8FA901F-1E06-418A-8FDF-75B9DEE5A223} = {080CA883-E12E-4901-86BB-274E4012A78E}
+		{5B642A57-A34D-43EC-9958-DDEBD57EB3FA} = {080CA883-E12E-4901-86BB-274E4012A78E}
+		{49A71FEF-0DD5-411F-9CA1-64899A70C6C9} = {6CE41392-954C-4882-A2E9-CAD51E3196D4}
+		{512E16ED-6586-43B0-80A4-4ECC04E0D864} = {49A71FEF-0DD5-411F-9CA1-64899A70C6C9}
+		{9C76D05D-1CF3-4411-8812-C021E7501EDA} = {49A71FEF-0DD5-411F-9CA1-64899A70C6C9}
+	EndGlobalSection
+EndGlobal

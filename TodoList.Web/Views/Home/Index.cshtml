@@ -1,0 +1,36 @@
+﻿@using Models
+@model IList<TodosManagement.Core.Model.TodosAggregate.TodoList>
+@{
+    ViewBag.Title = "title";
+}
+
+<style type="text/css">
+    .done {
+        text-decoration: line-through;
+    }
+</style>
+
+<h2>Lista de tarefas</h2>
+
+@Html.ActionLink("Adicionar nova todo-list", "Adicionar", "Home")
+<hr />
+
+<ul>
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <li>
+            <span class="@(Model[i].Status == TodoListStatus.Done ? "done" : "")"> @Model[i].Id - @Html.ActionLink(@Model[i].Title, "Tarefas", "Home", new { Id = Model[i].Id }, null) (@Model[i].Responsavel) - ultima atualizacao em: @Model[i].LastUpdate.ToShortDateString() às @Model[i].LastUpdate.ToShortTimeString() </span>
+            -
+            <span>
+                @if (Model[i].Status == TodoListStatus.Done)
+                {
+                    @Html.ActionLink("[reabrir]", "Reabrir", "Home", new { Id = Model[i].Id }, null)
+                }
+                else
+                {
+                    @Html.ActionLink("[concluir]", "Concluir", "Home", new { Id = Model[i].Id }, null)
+                }
+            </span>
+        </li>
+    }
+</ul>

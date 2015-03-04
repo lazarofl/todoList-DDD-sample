@@ -1,0 +1,25 @@
+﻿@model TodoList.Web.Models.AdicionarTodoItemViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Adicionar tarefa</h2>
+
+@using (Html.BeginForm("AdicionarTarefa", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.TodoListId);
+
+    @Html.LabelFor(x => x.Titulo)
+    @Html.TextBoxFor(x => x.Titulo)
+
+    <br>
+
+    @Html.LabelFor(x => x.Responsavel)
+    @Html.TextBoxFor(x => x.Responsavel)
+    <br />
+
+    @Html.ValidationSummary()
+
+    <input type="submit" value="Adicionar tarefa" />
+}

@@ -1,0 +1,25 @@
+﻿@model TodoList.Web.Models.AdicionarTodoListViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Adicionar nova to-do list</h2>
+
+
+@using (Html.BeginForm("Adicionar", "Home", FormMethod.Post, new { @class="form-adiconar"}))
+{
+    
+    @Html.LabelFor(x => x.Titulo)
+    @Html.TextBoxFor(x => x.Titulo)
+
+    <br>
+
+    @Html.LabelFor(x => x.Responsavel)
+    @Html.TextBoxFor(x => x.Responsavel)
+    <br />
+
+    @Html.ValidationSummary()
+
+    <input type="submit" value="Adicionar to-do list" />
+}

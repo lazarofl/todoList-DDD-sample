@@ -1,0 +1,23 @@
+﻿@using TodosManagement.Core.Model.TodosAggregate
+@model TodoList
+
+@{
+    ViewBag.Title = "title";
+    var tarefas = Model.Tarefas.ToList();
+}
+@Html.ActionLink("< voltar para to-do lists", "Index", "Home")
+
+<h2>Tarefas de @Model.Title (@Model.Responsavel) </h2>
+
+@Html.ActionLink("Adicionar nova tarefa", "AdicionarTarefa", "Home", new { Id = Model.Id }, null)
+<br />
+
+<div>
+    <h4>total de tarefas: @tarefas.Count</h4>
+    <ul>
+        @foreach (TodoItem tarefa in tarefas)
+        {
+            <li>@tarefa.Id - @tarefa.Title (@tarefa.Responsavel) - ultima atualizacao em: @tarefa.LastUpdate.ToShortDateString() às @tarefa.LastUpdate.ToShortTimeString()</li>
+        }
+    </ul>
+</div>
